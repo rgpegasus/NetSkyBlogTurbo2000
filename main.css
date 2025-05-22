@@ -1,0 +1,340 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-image: url("assets/pictures/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    scroll-behavior: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.TopBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #454545;
+    padding: 0 50px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000; 
+}
+
+
+.TopBar input {
+    background-color: #353535;
+    border: none;
+    color: white;
+    padding: 6px 20px;
+}
+
+.TopBar-logo {
+    background-color: #343434;
+    width: 250px;
+    padding: 2px 50px;
+    display: flex;
+    justify-content: end;
+}
+.TopBar-logo img {
+    height: 56px;
+}
+.TopBar-info {
+    display: flex;
+    gap:10px;
+}
+.TopBar-connect {
+    background-color: #209dfd;
+    color: white;
+    padding: 6px 20px;
+    font-size: 15px;
+    border: none;
+}
+
+.TopBar-create-blog {
+    background-color: #8bc217;
+    color: white;
+    padding: 6px 20px;
+    font-size: 15px;
+    border: none;
+}
+
+
+
+.Contents-box {
+    display: flex;
+    height: calc(100vh - 136px);
+    margin: 80px;
+    margin-bottom: 0;
+    margin-top: 136px;
+    gap: 10px;
+}
+
+
+.Contents-box-TopBar h1{
+    color:#38cb30;
+    text-align: start;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.Contents-box-title {
+    color:white;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+.Contents-box-pdp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.Contents-box-pdp img {
+    width: 80%;
+}
+.Contents-box-left h4 {
+    color: #225a95;
+    text-decoration: underline;
+    text-align: center;
+    margin: 5px;
+}
+.Contents-box-scroll {
+    border-top: 2px solid #d7d8ce;
+    border-radius: 10px 10px 0 0;
+    flex: 4;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.Contents-box-item {
+    background: linear-gradient(to bottom, #fd1890 0%, #ff84bb 100%);
+    margin-bottom: 20px;
+    border: 2px solid #d7d8ce;
+    border-radius: 10px;
+}
+.Contents-box-scroll blog-box:first-child .Contents-box-item {
+    border-top: none;
+}
+.Contents-box-img {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    
+}
+
+.Contents-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.Contents-wrapper img {
+    width: 60%;
+}
+
+.Contents-wrapper p {
+    max-width: 35%;
+    text-align: justify;
+    font-size: 18px;
+    color: white;
+}
+
+html::-webkit-scrollbar,
+.Contents-box-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.Contents-box-item h1 {
+    color: #af4d90;
+    margin: 0;
+    background-color: #000000;
+    top:0;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px 10px 0 0;
+}
+.Contents-box-description p {
+    color: white;
+    font-size: 18px;
+    margin: 0 5px;
+    margin-bottom: 2px;
+    text-align:left;
+}
+
+.Contents-box-description {
+    margin: 50px 0;
+}
+.Contents-box-description-title{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.Contents-box-left h1:first-child{
+    text-align: center;
+    margin: 10px ;
+}
+.Contents-box-actions {
+   margin: 0 20px; 
+   display: flex;
+   justify-content: space-between;
+}
+.Contents-box-actions div {
+    color: white;
+    display: flex;
+    text-decoration: underline;
+    gap: 20px;
+}
+.Contents-box-actions p {
+    color: white;
+    margin: 0;  
+    text-decoration: underline;
+}
+.Contents-box-actions div p {
+    margin: 0;
+}
+
+.Contents-box-info {
+    margin: 15px 20px 5px;
+    display: flex;
+    justify-content: space-between;
+    color: #af4d90;
+}
+.Contents-box-info div {
+    display: flex;
+}
+.Contents-box-info div p{
+    margin: 0;
+}
+.Contents-box-info div p:first-child{
+    text-decoration: underline;
+}
+.Contents-box-info p {
+    margin: 0;
+}
+
+.Contents-box-right-info {
+    background-color: #fd1890;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 8px 5px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.Contents-box-right-tags {
+    max-width: calc(100% - 20px);
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: center;
+    margin: 10px;
+}
+
+.Contents-box-right-tags p {
+    margin: 0;
+    color: #38cb30;
+    text-decoration: underline;
+    text-align: center;
+}
+.Contents-box-info {
+    display: flex;         
+    gap: 5px;                 
+    margin: 0 5px;     
+    flex-wrap: wrap;        
+}
+
+.Contents-box-white {
+    color: white;
+}
+
+.Contents-box-green {
+    color: green;
+}
+.Contents-box-info p {
+    margin: 0;
+    display: flex;
+    white-space: wrap;
+    text-align: start;
+}
+.Contents-main-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.Contents-box-right {
+    flex: 1;
+    background-color: #000;
+    height: 100%;
+    border: 2px solid #e2419e;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+}
+.Contents-box-left {
+    flex: 1;
+    height: 100%;
+}
+.Contents-box-left-Contents {
+    background-color: #000;
+    border: 2px solid #e2419e;
+    border-bottom: none;
+    margin:0;
+    height: calc(100% - 40px);
+    border-top: none;
+}
+.Contents-box-TopBar h1{
+    color:#38cb30;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+}
+.Contents-box-left-Contents p {
+
+    margin: 0;
+}
+
+.Contents-box-TopBar-main {
+    background-color: #000;
+    margin:0;
+    top:0;
+    padding: 0;
+    justify-content: center;
+    border-radius: 9px 9px 0 0;
+    height: 40px;
+    width: 65%;
+    border: 2px solid #e2419e;
+    border-bottom: none;
+    align-items: center;
+    display: flex;
+}
+.Contents-box-TopBar {
+    display: flex;
+    margin:0;
+    top:0;
+    padding: 0;
+    width: 100%;
+    align-items: end;
+}
+.Contents-box-TopBar-other {
+    background-color: #000;
+    display: flex;
+    margin:0;
+    top:0;
+    padding: 0;
+    border-radius: 5px 5px 0 0;
+    height: 35px;
+    justify-content: center;
+    width: 35%;
+    border: 2px solid #e2419e;
+    border-left: none;
+    align-items: center;
+}
