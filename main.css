@@ -138,7 +138,7 @@ html, body {
 
 .Contents-wrapper p {
   color: white;
-  text-align: justify;
+  text-align: center; /* ICI TEXTE */
   font-size: 1.3vw;
   white-space: pre-line;
 }
@@ -332,7 +332,7 @@ html::-webkit-scrollbar,
 
 .Contents-box-right-tags-wrapper {
     position: relative;
-    max-height: 40vh; 
+    max-height: 60vh; 
     overflow: hidden;
     overflow-y: scroll;
     scrollbar-width: none; 
