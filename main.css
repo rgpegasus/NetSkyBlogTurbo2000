@@ -332,7 +332,7 @@ html::-webkit-scrollbar,
 
 .Contents-box-right-tags-wrapper {
     position: relative;
-    max-height: 60vh; 
+    max-height: 55vh; 
     overflow: hidden;
     overflow-y: scroll;
     scrollbar-width: none; 
